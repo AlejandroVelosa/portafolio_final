@@ -1,0 +1,499 @@
+/* ================GOOOGLE FONTS ================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@500;600;700;800&display=swap');
+
+/* ================CSS VARIABLES  ================== */
+
+:root {
+    /* ===== Colors ========= */
+    /* Color mode HSL(hue , saturation , lightness  )*/
+    --first-color: hsl(271, 76%, 53%);
+        --title-color: hsl(0, 0%, 100%);
+            --text-color: hsl(0, 0%, 80%);
+            --body-color: hsl(0, 0%, 7%);
+            --container-color: hsl(0, 1%, 17%);
+            --border-color: hsl(0, 0%, 15%);
+    
+
+    /* =============================== fon and typografrhy ======= */
+    --body-font: 'Open Sans', sans-serif;
+    --second-font: 'Poppins', sans-serif;
+
+    --big-font-size: 56px;
+    --h1-font-size: 50px;
+    --h2-font-size: 32px;
+    --h3-font-size: 24px;
+    --large-font-size: 18px;
+    --normal-font-size: 16px;
+    --small-font-size: 15px;
+    --smaller-font-size: 14px;
+    --tiny-font-size: 12px;
+
+    /* ============= font weight ========= */
+
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-800: 800;
+}
+.dark-theme {
+    --title-color: hsl(0, 0%, 100%);
+    --text-color: hsl(0, 0%, 80%);
+    --body-color: hsl(0, 0%, 7%);
+    --container-color: hsl(0, 1%, 17%);
+    --border-color: hsl(0, 0%, 15%);
+}
+
+/* RESPONSIVE TYPOGRAFY */
+
+@media screen and (max-width: 1200px) {
+    :root{
+            --big-font-size: 36px;
+                --h1-font-size: 32px;
+                --h2-font-size:24px;
+                --h3-font-size: 20px;
+                --large-font-size: 16px;
+                --normal-font-size: 15px;
+                --small-font-size: 14px;
+                --smaller-font-size: 13px;
+                --tiny-font-size: 11px;
+    }
+}
+/* ================== BASE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-500);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: var(--weight-700);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ================REUSABLE CSS ================== */
+.container{
+    max-width: 1140px;
+    margin-inline:  auto;
+    padding: 15px;
+}
+
+
+
+
+.grid{
+    display: grid;
+    gap: 30px;
+}
+
+.section{
+    padding-block: 70px;
+}
+.section_title{
+    font-size: var(--big-font-size);
+    font-weight: var(--weight-800);
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section_title span{
+color: var(--first-color);
+}
+
+.button{
+    display: inline-block;
+    color: var(--title-color);
+    border: 1px solid var(--first-color);
+    padding: 15px 70px 15px 35px;
+    border-radius: 35px;
+    font-family: var(--second-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-500);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: var(--text-white);
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--first-color);
+    transform: translateX(100%);
+    z-index: -1;
+    transition:  all 0.3s ease-in-out;
+}
+
+.button:hover::before{
+    transform: translateX(0);
+}
+.button__icon{
+    background-color: var(--first-color);
+    position: absolute;
+    inset-block:.6px;
+    right: 0;
+    width: 55px;
+    border-radius: 50%;
+    color: var(--text-white);
+    font-size: var(--large-font-size);
+    text-align: center;
+    line-height: 54px;
+}
+
+
+@media screen and ( max-width: 1400px ) {
+    .container{
+        max-width: calc(100% - 180px);
+    }
+    .home_title {
+        font-size: var(--h2-font-size);
+    }
+
+    .home__description{
+        font-size: var(--h3-font-size);
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+   .grid{
+    gap: 20px;
+   }
+
+   .home_data{
+    padding-right: 40px;
+   }
+   
+
+  .home_title {
+      font-size: var(--h2-font-size);
+  }
+
+   .home__description{
+    font-size: var(--small-font-size);
+   }
+
+   .stats_title{
+    padding-left: 35px;
+   }
+
+   .stats_title::before{
+    width: 22px;
+   }
+   .skills_container{
+    row-gap: 32px;
+   }
+   .progress_circle{
+    width: 100px;
+    height: 100px;
+   }
+
+   .skills_title{
+    margin-top: 20px;
+   }
+
+   .resume_icon{
+    width: 36px;
+    height: 36px;
+    line-height: 38px;
+
+   }
+
+   .resumen_item{
+    padding-left: 55px;
+
+   }
+   .portfolio_modal-content{
+    max-width: 600px;
+   }
+   .modal_close{
+    width: 40px;
+    height: 40px;
+   }
+
+   .form_input-group{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+   }
+   .form_input-group .form_input-div:last-child{
+    grid-column: 1/-1;
+   }
+   .form_input-div{
+    margin-bottom: 24px;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        max-width: 720px;
+    }
+
+    .home {
+        padding: 20px;
+        grid-template-columns: 5fr 7fr ;
+    }
+
+    .home_title {
+        font-size: var(--h1-font-size);
+    }
+
+    .home_data{
+        padding-right: 0;
+    }
+
+    .section{
+        padding-block: 50px;
+    }
+    .section_title{
+        margin-bottom: 40px;
+    }
+
+    .about_container , 
+    .resumen_container,
+    .contact_container{
+        grid-template-columns: 1fr;
+    }
+
+    .about_container{
+        row-gap: 40px;
+    }
+    .subtitle_center{
+        margin-bottom: 45px;
+    }
+
+    .skills_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .resume_container{
+        row-gap: 45px;
+    }
+
+    .resumen_item:not(:last-child){
+        margin-bottom: 45px;
+    }
+    .separator{
+        margin: 66px auto 50px;
+    }
+
+        .portfolio_container {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        .contact_container{
+            row-gap: 48px;
+        }
+}
+
+@media screen and (max-width: 768px) {
+.home{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 10px;
+}
+
+.color__block{
+    display: none;
+}
+
+.home_img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin-top: auto;
+}
+
+.home_content{
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: auto;
+}
+.home_title{
+    padding-left: 0;
+}
+
+.home_title::before{
+    all: unset;
+}
+.home_title span{
+    display: block;
+}
+
+.container{
+    max-width: 540px;
+}
+
+.portfolio_modal-content{
+    padding: 25px 20px ;
+}
+
+.modal_close{
+    top: -9px;
+}
+
+}
+
+
+@media screen and (max-width: 576px) {
+.nav_toggle{
+    top: 20px;
+    right: 15px;
+}
+
+.nav_link{
+    column-gap: 20px;
+}
+
+.nav__icon,
+.nav_name{
+    font-size: var(--h3-font-size);
+}
+
+.skills_container{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.portfolio_container{
+    grid-template-columns: 1fr;
+}
+
+.modal_list{
+    grid-template-columns: 1fr;
+}
+.modal_img{
+    height: 300px;
+}
+
+.modal_close{
+    right: 1rem;
+}
+
+.form_input-group{
+    grid-template-columns: 1fr;
+}
+
+.theme_img{
+    width: 25px;
+}
+.style_switcher-toggler,
+.theme_toggler{
+    width: 40px;
+    height: 40px;
+}
+
+.style_switcher-toggler{
+    top: 15%;
+}
+
+.theme_toggler{
+    bottom: 15%;
+}
+
+.style_switcher-close{
+    top: 5%;
+}
+
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .portfolio_modal-content{
+        
+        height: 25%;
+    }
+
+
+    .section{
+       margin-bottom: 8rem;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .home_content{
+    text-align: left;
+}
+
+.home_title{
+    font-size: var(--h1-font-size);
+}
+
+.home__description{
+    text-align: justify;
+}
+
+
+.info_title{
+    display: block;
+    margin-bottom: 4px;
+}
+
+.stats_box{
+    padding: 15px 15px 25px 20px ;
+}
+}
+
+@media screen and (max-width: 350px) {
+    .home_img{
+        display: none;
+    }
+.home_title span {
+    display: inline;
+    padding-left: 1rem;
+    
+}
+
+.profession_container{
+    padding: 1rem;
+}
+
+.stats{
+    grid-template-columns: 1fr;
+}
+
+}
