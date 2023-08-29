@@ -8,6 +8,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'
 import './about.css'
 import Resumen from "../shared/Resumen";
+import Cv from '../../assets/Resume.pdf'
 
 
 
@@ -31,7 +32,7 @@ const About = () => {
                         <ul className="info_list grid">
                             <Info />
                         </ul>
-                        <a href="" className="button">
+                        <a href={Cv} download='' className="button">
                             Download Cv
                             <span className="button__icon">
                                 < FaDownload />

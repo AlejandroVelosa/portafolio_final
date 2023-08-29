@@ -15,6 +15,7 @@ import Work1 from './assets/ModaFit.png';
 import Work2 from './assets/rickmort.png';
 import Work3 from './assets/pokedex1.png';
 import Work4 from './assets/ecomerse.png';
+import Work6 from './assets/weatherApp.png';
 
 
 import Theme1 from './assets/purple.png';
@@ -27,6 +28,7 @@ import Theme7 from './assets/yellowgreen.png';
 import Theme8 from './assets/orange.png';
 import Theme9 from './assets/green.png';
 import Theme10 from './assets/yellow.png';
+
 
 export const links = [
   {
@@ -383,33 +385,34 @@ export const portfolio = [
 
 
 
-  // {
-  //   id: 6,
-  //   img: Work6,
-  //   title: 'Photo Editing',
-  //   details: [
-  //     {
-  //       icon: <FiFileText />,
-  //       title: 'Project : ',
-  //       desc: 'Photo',
-  //     },
-  //     {
-  //       icon: <FiUser />,
-  //       title: 'Client : ',
-  //       desc: 'Dribble',
-  //     },
-  //     {
-  //       icon: <FaCode />,
-  //       title: 'Language : ',
-  //       desc: 'Adobe Photoshop',
-  //     },
-  //     {
-  //       icon: <FiExternalLink />,
-  //       title: 'Preview : ',
-  //       desc: 'www.dibble.com',
-  //     },
-  //   ],
-  // },
+  {
+    id: 6,
+    img: Work6,
+    title: 'Weather App',
+    link: 'https://weather-app-alejandro.netlify.app/',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Photo',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'Dribble',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Adobe Photoshop',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'www.dibble.com',
+      },
+    ],
+  },
 ];
 
 export const themes = [
