@@ -17,7 +17,7 @@ const Skills = () => {
                             />
                         </div> */}
 
-                        <div className="name_img">
+                        <div className="name_img ">
                             <h3 className="skills_title">{title}</h3>
                             <img className="skills_img" src={img} alt="" />
                         </div>

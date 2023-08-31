@@ -65,8 +65,8 @@ const Home = () => {
                         I'm Jairo Alejandro Velosa Bolaños, a dedicated Full-Stack developer with expertise in React JS, Node JS, Redux, and more. My focus is on challenging projects that let me create innovative solutions to user needs. Let's collaborate on your project and make a meaningful impact.
                     </p>
 
-                    <Link onClick={() => handleLinkClick('about')} className="button ">
-                        more About Me
+                    <Link onClick={() => handleLinkClick('portfolio')} className="button ">
+                        Portfolio
                         <span id="about" className="button__icon">
                             <FaArrowRight />
                         </span>

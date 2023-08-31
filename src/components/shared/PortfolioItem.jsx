@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Close from '../../assets/close.svg'
 
-const PortfolioItem = ({ img, title, link, details }) => {
+const PortfolioItem = ({ img, title, link, description }) => {
 
     const [modal, setModal] = useState(false)
     const handletoggleModal = () => {
@@ -15,6 +15,7 @@ const PortfolioItem = ({ img, title, link, details }) => {
             <a href={link} target="_blank">
                 <div className="portfolio_hover" onClick={handletoggleModal}>
                     <h3 className="portfolio_title">{title}</h3>
+                    <h4 className='portfolio_description'>{description}</h4>
                 </div>
             </a>
 

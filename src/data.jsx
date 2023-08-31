@@ -7,6 +7,7 @@ import {
   FaGraduationCap,
   FaCode,
   FaEye,
+  FaNodeJs
 
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
@@ -239,7 +240,7 @@ export const skills = [
 
   {
     id: 5,
-    title: 'Note Js',
+    title: 'Node Js',
     percentage: '30',
     img: notejs,
   },
@@ -275,6 +276,7 @@ export const portfolio = [
     img: Work1,
     title: 'Moda Fit',
     link: 'https://peppy-faun-d39c6f.netlify.app/#products',
+    description: " is a website crafted using JavaScript, HTML, and CSS.",
     details: [
       {
         icon: <FiFileText />,
@@ -304,6 +306,7 @@ export const portfolio = [
     img: Work2,
     title: 'Rick and Morty App',
     link: 'https://rick-and-morty-alejandro.netlify.app/',
+    description: "This website delves into advanced React concepts like lists and keys, controlled inputs, conditional rendering, and error handling, for dynamic interaction and an enhanced user experience",
     details: [
       {
         icon: <FiFileText />,
@@ -332,6 +335,7 @@ export const portfolio = [
     img: Work3,
     title: 'Pokedex App',
     link: 'https://pokedex-alejadro-velosa.netlify.app/',
+    description: "This website merges React Router and Redux for smooth navigation and efficient global state. React Router guarantees a seamless view-switching experience, while Redux manages app state, offering consistency and scalability",
     details: [
       {
         icon: <FiFileText />,
@@ -360,6 +364,7 @@ export const portfolio = [
     img: Work4,
     title: 'Ecommerce',
     link: 'https://ecomerse-alejandro-velosa.netlify.app/#/',
+    description: "This website merges React Router, Redux, and a robust backend for a seamless experience.It includes login, registration   and purchase tracking.React Router handles navigation, Redux manages state, and the backend adds extra functionalities",
     details: [
       {
         icon: <FiFileText />,
@@ -390,6 +395,7 @@ export const portfolio = [
     img: Work6,
     title: 'Weather App',
     link: 'https://weather-app-alejandro.netlify.app/',
+    description: "This weather app uses useEffect and async requests for real-time data. useEffect updates dynamic info, while async requests provide current details.",
     details: [
       {
         icon: <FiFileText />,

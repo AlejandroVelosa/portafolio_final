@@ -83,10 +83,21 @@
     gap: 1rem;
 }
 
-.skills_img{
+.skills_img {
     height: 80px;
     width: 80px;
     object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Agrega transición para rotación y color de fondo */
+    perspective: 800px;
+    /* Define la perspectiva para el efecto 3D */
+}
+
+.skills_img:hover {
+    cursor: pointer;
+    transform: rotateY(360deg);
+    /* Aplica la rotación en el eje Y para el efecto 3D */
 }
 .progress_circle{
     width: 120px;
@@ -119,7 +130,7 @@
 
 .skills_title{
     font-family: var(--body-font);
-    font-size: var(--normal-font-size) ;
+    font-size: var(--h3-font-size) ;
     font-weight: var(--weight-400);
     margin-top: 24px;
     margin-top: 24px;
