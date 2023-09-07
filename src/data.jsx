@@ -17,6 +17,8 @@ import Work2 from './assets/rickmort.png';
 import Work3 from './assets/pokedex1.png';
 import Work4 from './assets/ecomerse.png';
 import Work6 from './assets/weatherApp.png';
+import Work7 from './assets/CRUD.png'
+import Work8 from './assets/music_spotify.png'
 
 
 import Theme1 from './assets/purple.png';
@@ -302,6 +304,66 @@ export const portfolio = [
   },
 
   {
+    id: 8,
+    img: Work8,
+    title: 'Music App',
+    link: 'https://spotify-alejandro-velosa.netlify.app/#/',
+    description: "Built with Redux, React Router DOM, and Axios, this app simplifies adding, editing, and deleting artists, songs, and albums.",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Photo',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'Dribble',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Adobe Photoshop',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'www.dibble.com',
+      },
+    ],
+  },
+
+  {
+    id: 7,
+    img: Work7,
+    title: 'CRUD APP',
+    link: 'https://main--zesty-valkyrie-0b3b12.netlify.app/',
+    description: "An app that enables easy user addition, editing, and deletion using Axios for CRUD operations",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Photo',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'Dribble',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Adobe Photoshop',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'www.dibble.com',
+      },
+    ],
+  },
+
+  {
     id: 2,
     img: Work2,
     title: 'Rick and Morty App',
@@ -419,6 +481,11 @@ export const portfolio = [
       },
     ],
   },
+
+
+
+
+
 ];
 
 export const themes = [
