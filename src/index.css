@@ -383,6 +383,10 @@ color: var(--first-color);
     top: 20px;
     right: 15px;
 }
+.about {
+    margin-top: 150px;
+}
+
 
 .nav_link{
     column-gap: 20px;
@@ -448,9 +452,12 @@ color: var(--first-color);
         height: 25%;
     }
 
+    .home_data{
+        margin-bottom: 20rem;
+    }
 
     .section{
-       margin-bottom: 8rem;
+       margin-bottom: 15rem;
         margin-left: auto;
         margin-right: auto;
     
