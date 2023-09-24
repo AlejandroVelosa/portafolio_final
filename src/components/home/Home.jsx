@@ -62,7 +62,7 @@ const Home = () => {
                     </div>
 
                     <p className="home_description">
-                        I'm Jairo Alejandro Velosa Bolaños, a dedicated Full-Stack developer with expertise in React JS, Node JS, Redux, and more. My focus is on challenging projects that let me create innovative solutions to user needs. Let's collaborate on your project and make a meaningful impact.
+                        I'm Jairo Alejandro Velosa Bolaños, a passionate full-stack developer skilled in building high-performance web applications and enhancing user experiences. My expertise includes JavaScript, React.js, Redux, Axios, React Router DOM for front-end development, and Node.js, Express.js, Sequelize, bcrypt, Jest, and JWT for back-end development. I also excel in HTML and CSS for creating appealing and responsive web interfaces.
                     </p>
 
                     <Link onClick={() => handleLinkClick('portfolio')} className="button ">
