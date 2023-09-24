@@ -19,6 +19,7 @@ import Work4 from './assets/ecomerse.png';
 import Work6 from './assets/weatherApp.png';
 import Work7 from './assets/CRUD.png'
 import Work8 from './assets/music_spotify.png'
+import Work9 from "./assets/autenticacion.png"
 
 
 import Theme1 from './assets/purple.png';
@@ -274,6 +275,14 @@ export const skills = [
 
 export const portfolio = [
 
+  {
+    id: 9,
+    img: Work9,
+    title: 'Authentication',
+    link: 'https://front-autenticacion.vercel.app/#/login',
+    description: "I created a secure authentication and password recovery app using technologies like React.js, Redux, JWT, Bcrypt, Express.js, Sequelize, and Nodemailer. It ensures a safe user experience with features like account verification and password reset",
+  },
+
 
   {
     id: 4,
@@ -281,27 +290,6 @@ export const portfolio = [
     title: 'Ecommerce',
     link: 'https://ecomerse-alejandro-velosa.netlify.app/#/',
     description: "This website merges React Router, Redux, and a robust backend for a seamless experience.It includes login, registration   and purchase tracking.React Router handles navigation, Redux manages state, and the backend adds extra functionalities",
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'personal proyect ',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'react , css , javascript',
-      },
-      {
-        icon: <FaEye />,
-        title: 'Preview : ',
-        desc: 'https://ecomerse-alejandro-velosa.netlify.app/#/',
-      },
-    ],
   },
   {
     id: 1,
