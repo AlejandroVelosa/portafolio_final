@@ -8,7 +8,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'
 import './about.css'
 import Resumen from "../shared/Resumen";
-import Cv from '../../assets/cvEnglish-alejandro-velosa.pdf'
+import Cv from '../../assets/full stack english.pdf'
 
 
 
